@@ -1,0 +1,43 @@
+{
+ "layout": [
+   {
+     "type": "component",
+     "componentName": "Heading",
+     "props": {
+       "text": "User Profile",
+       "level": 2
+     }
+   },
+   {
+     "type": "component",
+     "componentName": "Image",
+     "props": {
+       "src": "https://placehold.co/600x400?text=Hello+User",
+       "alt": "User Avatar"
+     }
+   },
+   {
+     "type": "component",
+     "componentName": "UserInfo",
+     "props": {
+       "username": "johndoe",
+       "email": "john@example.com",
+       "dataKey": "isEditMode"
+     }
+   },
+   {
+     "type": "component",
+     "componentName": "Button",
+     "props": {
+       "text": "Toggle Edit Profile",
+       "action": "toggleEditMode"
+     }
+   }
+ ],
+ "data": {
+   "isEditMode": false
+ },
+ "methods": {
+   "toggleEditMode": "this.data.isEditMode = !this.data.isEditMode"
+ }
+}

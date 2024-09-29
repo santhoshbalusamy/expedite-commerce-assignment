@@ -1,0 +1,41 @@
+{
+ "layout": [
+   {
+     "type": "component",
+     "componentName": "Heading",
+     "props": {
+       "text": "Our Latest Product",
+       "level": 1
+     }
+   },
+   {
+     "type": "component",
+     "componentName": "Image",
+     "props": {
+       "src": "https://placehold.co/600x400?text=Hello+Product",
+       "alt": "Latest Product Image"
+     }
+   },
+   {
+    "type": "component",
+    "componentName": "Counter",
+    "props": {
+      "dataKey": "cartCount"
+    }
+   },
+   {
+     "type": "component",
+     "componentName": "Button",
+     "props": {
+       "text": "Add to Cart",
+       "action": "addToCart"
+     }
+   }
+ ],
+ "data": {
+   "cartCount": 0
+ },
+ "methods": {
+   "addToCart": "this.data.cartCount++"
+ }
+}
